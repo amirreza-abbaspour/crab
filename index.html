@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CRAB | برنامه غذایی هوشمند</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+<header class="header">
+
+    <a href="#home" class="logo">
+        <span class="logo-icon">🦀</span>
+        CRAB<span>.</span>
+    </a>
+
+    <nav>
+        <a href="#home">خانه</a>
+        <a href="#features">ویژگی‌ها</a>
+        <a href="#planner">ساخت برنامه</a>
+    </nav>
+
+    <a href="#planner" class="header-btn">
+        شروع کنید
+    </a>
+
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                ✨ برنامه غذایی شخصی‌سازی‌شده
+            </div>
+
+            <h1>
+                غذای مناسب
+                <span>برای سبک زندگی تو</span>
+            </h1>
+
+            <p>
+                اطلاعات و ترجیحاتت را وارد کن تا CRAB از بین
+                گزینه‌های مختلف، یک برنامه غذایی متنوع برایت بسازد.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#planner" class="primary-btn">
+                    ساخت برنامه من
+                    <span>←</span>
+                </a>
+
+                <a href="#features" class="secondary-btn">
+                    امکانات CRAB
+                </a>
+
+            </div>
+
+            <div class="hero-points">
+                <span>✓ ترجیحات غذایی</span>
+                <span>✓ آلرژی‌ها</span>
+                <span>✓ سطح فعالیت</span>
+            </div>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+            <div class="hero-circle"></div>
+
+            <div class="food-preview">
+
+                <div class="food-image">
+                    🥗
+                </div>
+
+                <div class="food-info">
+                    <small>پیشنهاد CRAB</small>
+                    <strong>کاسه سبزیجات و غلات</strong>
+                    <span>یک انتخاب متنوع برای وعده امروز</span>
+                </div>
+
+            </div>
+
+            <div class="floating-card card-one">
+                🥑
+                <div>
+                    <small>صبحانه</small>
+                    <strong>متنوع</strong>
+                </div>
+            </div>
+
+            <div class="floating-card card-two">
+                💧
+                <div>
+                    <small>یادآوری</small>
+                    <strong>آب بنوش</strong>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+
+    <section class="features" id="features">
+
+        <div class="section-title">
+
+            <span>CRAB FEATURES</span>
+
+            <h2>
+                برنامه‌ای که
+                <strong>برای هر نفر متفاوت است</strong>
+            </h2>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <div class="feature-icon">👤</div>
+                <h3>اطلاعات شخصی</h3>
+                <p>
+                    سن، قد، وزن و میزان فعالیت را دریافت می‌کنیم
+                    تا اطلاعات کاربر در ساخت برنامه لحاظ شود.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🥬</div>
+                <h3>ترجیحات غذایی</h3>
+                <p>
+                    نوع تغذیه، غذاهای موردعلاقه و غذاهایی که نمی‌خواهی
+                    در برنامه ببینی قابل انتخاب هستند.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">✨</div>
+                <h3>برنامه متفاوت</h3>
+                <p>
+                    CRAB از بین گزینه‌های مختلف غذا انتخاب می‌کند
+                    تا نتیجه برای کاربران مختلف یکسان نباشد.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PLANNER -->
+
+    <section class="planner-section" id="planner">
+
+        <div class="planner-container">
+
+            <div class="planner-heading">
+
+                <span>مرحله ۱ از ۲</span>
+
+                <h2>
+                    اطلاعاتت را وارد کن
+                </h2>
+
+                <p>
+                    هرچه اطلاعات بیشتری وارد کنی، انتخاب غذاها دقیق‌تر می‌شود.
+                </p>
+
+            </div>
+
+
+            <form id="mealForm">
+
+                <div class="form-grid">
+
+                    <!-- AGE -->
+
+                    <div class="input-group">
+
+                        <label for="age">
+                            سن
+                        </label>
+
+                        <div class="input-box">
+
+                            <span>🎂</span>
+
+                            <input
+                                id="age"
+                                type="number"
+                                min="1"
+                                max="120"
+                                placeholder="مثلاً 25"
+                                required
+                            >
+
+                            <small>سال</small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- HEIGHT -->
+
+                    <div class="input-group">
+
+                        <label for="height">
+                            قد
+                        </label>
+
+                        <div class="input-box">
+
+                            <span>📏</span>
+
+                            <input
+                                id="height"
+                                type="number"
+                                min="50"
+                                max="250"
+                                placeholder="مثلاً 175"
+                                required
+                            >
+
+                            <small>cm</small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- WEIGHT -->
+
+                    <div class="input-group">
+
+                        <label for="weight">
+                            وزن
+                        </label>
+
+                        <div class="input-box">
+
+                            <span>⚖️</span>
+
+                            <input
+                                id="weight"
+                                type="number"
+                                min="10"
+                                max="300"
+                                placeholder="مثلاً 70"
+                                required
+                            >
+
+                            <small>kg</small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ACTIVITY -->
+
+                    <div class="input-group">
+
+                        <label for="activity">
+                            میزان فعالیت
+                        </label>
+
+                        <div class="input-box">
+
+                            <span>🏃</span>
+
+                            <select id="activity" required>
+
+                                <option value="">
+                                    انتخاب کنید
+                                </option>
+
+                                <option value="low">
+                                    کم
+                                </option>
+
+                                <option value="medium">
+                                    متوسط
+                                </option>
+
+                                <option value="high">
+                                    زیاد
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- MEALS -->
+
+                    <div class="input-group">
+
+                        <label for="mealCount">
+                            تعداد وعده
+                        </label>
+
+                        <div class="input-box">
+
+                            <span>🍽️</span>
+
+                            <select id="mealCount" required>
+
+                                <option value="3">
+                                    ۳ وعده
+                                </option>
+
+                                <option value="4">
+                                    ۴ وعده
+                                </option>
+
+                                <option value="5">
+                                    ۵ وعده
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ALLERGY -->
+
+                    <div class="input-group">
+
+                        <label for="allergy">
+                            حساسیت یا ماده‌ای که نمی‌خواهی
+                        </label>
+
+                        <div class="input-box">
+
+                            <span>🚫</span>
+
+                            <select id="allergy">
+
+                                <option value="none">
+                                    ندارم
+                                </option>
+
+                                <option value="nuts">
+                                    مغزها
+                                </option>
+
+                                <option value="dairy">
+                                    لبنیات
+                                </option>
+
+                                <option value="egg">
+                                    تخم مرغ
+                                </option>
+
+                                <option value="gluten">
+                                    گلوتن
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FOOD TYPE -->
+
+                <div class="preference">
+
+                    <label>
+                        نوع تغذیه
+                    </label>
+
+                    <div class="food-options">
+
+                        <label class="food-option">
+
+                            <input
+                                type="radio"
+                                name="foodType"
+                                value="normal"
+                                checked
+                            >
+
+                            <span>🍗</span>
+
+                            معمولی
+
+                        </label>
+
+
+                        <label class="food-option">
+
+                            <input
+                                type="radio"
+                                name="foodType"
+                                value="vegetarian"
+                            >
+
+                            <span>🥬</span>
+
+                            گیاهخواری
+
+                        </label>
+
+
+                        <label class="food-option">
+
+                            <input
+                                type="radio"
+                                name="foodType"
+                                value="vegan"
+                            >
+
+                            <span>🌱</span>
+
+                            وگان
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DISLIKES -->
+
+                <div class="preference">
+
+                    <label>
+                        غذاهایی که دوست نداری
+                    </label>
+
+                    <div class="checkbox-grid">
+
+                        <label>
+                            <input type="checkbox" value="chicken" class="dislike">
+                            مرغ
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="fish" class="dislike">
+                            ماهی
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="egg" class="dislike">
+                            تخم مرغ
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="rice" class="dislike">
+                            برنج
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="beans" class="dislike">
+                            حبوبات
+                        </label>
+
+                        <label>
+                            <input type="checkbox" value="oats" class="dislike">
+                            جو دوسر
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <div class="info-box">
+
+                    <span>ⓘ</span>
+
+                    <p>
+                        CRAB یک ابزار عمومی آموزشی است و جایگزین پزشک،
+                        متخصص تغذیه یا برنامه درمانی نیست.
+                    </p>
+
+                </div>
+
+
+                <button type="submit" class="submit-btn">
+
+                    ساخت برنامه اختصاصی من
+
+                    <span>←</span>
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- RESULT -->
+
+    <section class="result-section" id="result">
+
+        <div class="result-container">
+
+            <div class="result-header">
+
+                <div>
+
+                    <span>✨ برنامه آماده شد</span>
+
+                    <h2>
+                        برنامه غذایی پیشنهادی تو
+                    </h2>
+
+                    <p id="resultDescription">
+                        برنامه بر اساس اطلاعات واردشده ساخته شده است.
+                    </p>
+
+                </div>
+
+                <button
+                    class="new-plan"
+                    id="newPlan"
+                >
+                    ویرایش اطلاعات
+                </button>
+
+            </div>
+
+
+            <div class="profile-summary" id="profileSummary">
+            </div>
+
+
+            <div class="meal-grid" id="mealGrid">
+            </div>
+
+
+            <div class="water-card">
+
+                <div class="water-icon">
+                    💧
+                </div>
+
+                <div>
+
+                    <strong>
+                        آب را فراموش نکن
+                    </strong>
+
+                    <p>
+                        در طول روز به تشنگی خود توجه کن و آب کافی بنوش.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="result-note">
+
+                ⚠️ این برنامه یک نمونه عمومی و آموزشی است.
+                برای بیماری‌ها، آلرژی‌های جدی یا نیازهای تغذیه‌ای خاص
+                با متخصص تغذیه مشورت کنید.
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-logo">
+        🦀 CRAB<span>.</span>
+    </div>
+
+    <p>
+        انتخاب‌های متعادل، ساده‌تر.
+    </p>
+
+    <div class="footer-links">
+        <a href="#">حریم خصوصی</a>
+        <a href="#">قوانین</a>
+        <a href="#">تماس</a>
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
